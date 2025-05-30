@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse; /* Makes borders collapse into one */
+    width: 100%; /* Optional: makes table take full container width */
+  }
+
+th, td {
+    border: 1px solid #000; /* Adds a black border */
+    padding: 8px;            /* Adds space inside cells */
+    text-align: left;        /* Align text to the left */
+  }
+
+th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+  }
+
+
+/* Form container */
+form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px; /* space between input and button */
+  align-items: center;
+}
+
+/* Text input */
+form input[type="text"] {
+  flex-grow: 1; /* take up remaining width */
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button */
+form button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+
